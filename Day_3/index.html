@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form class='form-flex'>
+        <label for="nombre">Nombre Completo</label>
+        <input type="text" placeholder="Nombre" id='nombre'>
+
+        <label for="edad">Edad</label>
+        <input type="number" placeholder="Edad" id='edad'>
+        
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id='password'>
+
+        <label for="Live">Vivo</label>
+        <input type="checkbox" id='live'>
+        
+        <label for="date">Fecha</label>
+        <input type="date" id='date'>
+
+        <select aria-label="Selector de Materias">
+            <option value="0" selected disabled>Selecciona tu Materia</option>
+            <option value="1" aria-label="física">Física</option>
+            <option value="2" aria-label="matemáticas">Mates</option>
+            <option value="3" aria-label="biología">Biología</option>
+            <option value="4" aria-label="inmunología">Inmunología</option>
+        </select>
+
+        <button type='submit'>Guardar</button>
+    </form>
+</body>
+</html>
