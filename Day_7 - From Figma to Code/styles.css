@@ -1,0 +1,111 @@
+html, body{
+    background-color: #A9C7E1;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+header a img{
+    width: 183px;
+    /*height: 76px;*/
+}
+
+header nav a{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    margin-right: 25px;
+    color: white;
+}
+
+header nav a:first-child{
+    color: black;
+}
+
+#inicio{
+    background-color: #A9C7E1;
+    height: 86.7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    background-image: url(./Assets/background.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+}
+
+#inicio h1{
+    margin: 0;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+
+#inicio h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+#inicio button{
+    width: 178px;
+    height: 65px;
+    background: #1A264E;
+    font-style: normal;
+    font-weight:400;
+    font-size: 25px;
+    color: #FFFFFF;
+    border: 1px solid #1A264E;
+    box-sizing: border-box;
+    border-radius: 28px;
+    
+}
+
+#beneficios{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 33.333%;
+}
+
+.card img{
+    width: 130px;
+
+}
+
+@media screen and (max-width:600px){
+
+    header nav a{
+        display: none;
+    }
+
+    #inicio h1{
+        text-align: center;
+        font-size: 80px;
+    }
+
+    #inicio h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #inicio{
+        align-items: center;
+        background-image: none;
+    }
+
+}
