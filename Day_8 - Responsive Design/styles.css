@@ -107,6 +107,58 @@ header nav a:first-child{
     width: 130px;
 }
 
+#formulario{
+    background-color: #A9C7E1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 30px;
+    height: 80%;
+    padding: 30px;
+}
+
+#formulario h1{
+    font-size: 64px;
+}
+
+#formulario form input, #formulario form textarea{
+    background-color: transparent;
+    border: none;
+    border-bottom: 4px solid black;
+    font-size: 36px;
+}
+
+#formulario form input::placeholder, #formulario form textarea::placeholder{
+    color: black;
+}
+
+#formulario form button {
+    width: 150px;
+    height: 50px;
+    background-color: #1A264E;
+    border: 1px solid #1A264E;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color:#FFFFFF;
+    align-self: center;
+
+}
+
+#formulario form input:focus, #formulario form textarea:focus {
+    outline: none;
+}
+
 @media screen and (max-width:600px){
 
     header nav a{
@@ -130,6 +182,48 @@ header nav a:first-child{
 
     .card{
         width: 100%;
+    }
+
+    #formulario{
+        flex-direction: column;
+    }
+ 
+    #formulario h1{
+        font-size: 55px;
+        padding-top: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    section form{
+        width: 80%;
+    }
+    
+    
+    #formulario form input, #formulario form textarea{
+        background-color: transparent;
+        border: none;
+        border-bottom: 4px solid black;
+        font-size: 24px;
+    }
+    
+    #formulario form input::placeholder, #formulario form textarea::placeholder{
+        color: black;
+    }
+    
+    #formulario form button {
+        width: 150px;
+        height: 50px;
+        background-color: #1A264E;
+        border: 1px solid #1A264E;
+        box-sizing: border-box;
+        border-radius: 10px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        color:#FFFFFF;
+        align-self: center;
+    
     }
 
 }
