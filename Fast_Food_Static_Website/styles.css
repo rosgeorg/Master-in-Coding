@@ -1,0 +1,308 @@
+@font-face {
+    font-family: "Metropolis";
+    src: url("./Fonts/metropolis/Metropolis-Regular.otf");
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    font-family: "Metropolis";
+    background-color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    background-color: transparent;
+    position: absolute;
+    width: 97%;
+}
+
+header a img{
+    width: 100px;
+    /*height: 76px;*/
+}
+
+header nav a{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    margin-right: 25px;
+    color: black;
+}
+
+
+#inicio{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(./Assets/background_image.png);
+    background-size: 100% 100% ;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    padding-left: 20px;
+}
+
+#inicio h1{
+    margin: 0;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+#inicio h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+#inicio button{
+    width: 178px;
+    height: 65px;
+    background: #e5734f;
+    border: 1px solid #e5734f;
+    box-sizing: border-box;
+    border-radius: 28px;
+}
+
+#inicio button a{
+    font-style: normal;
+    font-weight:400;
+    font-size: 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.heading{
+    text-align: center;
+    font-weight: bold;
+    color: #fcb422;
+    font-size: 50px;
+}
+
+.heading h1{
+    margin-bottom: 50px;
+}
+
+#beneficios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 50px 10px 50px;
+}
+
+.card{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 90px;
+    border: 0px;
+}
+
+.card h3{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.card p{
+    text-align: center;
+    padding: 20px;
+    font-size: 17px;
+    margin: 0;
+}
+
+.card i{
+    font-size: 78px;
+    color: #348981;
+}
+
+#formulario{
+    background-color: #c7e8e9;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 30px;
+    height: 80%;
+    padding: 30px;
+}
+
+#formulario h1{
+    font-size: 64px;
+    font-family: "Metropolis";
+}
+
+#formulario form input, #formulario form textarea{
+    background-color: transparent;
+    border: none;
+    border-bottom: 4px solid black;
+    font-size: 36px;
+    font-family: "Metropolis";
+}
+
+#formulario form input::placeholder, #formulario form textarea::placeholder{
+    color: black;
+}
+
+#formulario form button {
+    width: 150px;
+    height: 50px;
+    background-color: #e5734f;
+    border: 1px solid #e5734f;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color:#FFFFFF;
+    align-self: center;
+
+}
+
+#formulario form input:focus, #formulario form textarea:focus {
+    outline: none;
+}
+
+@media screen and (max-width:1200px){
+
+    #formulario h1{
+        font-size: 40px;
+    }
+
+    section form{
+        width: 60%;
+    }
+    
+}
+
+@media screen and (max-width:990px){
+
+    #formulario h1{
+        font-size: 30px;
+    }
+
+    section form{
+        width: 40%;
+    }
+    
+    #formulario form input, #formulario form textarea{
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width:600px){
+
+    header nav a{
+        display: none;
+    }
+
+    #inicio h1{
+        text-align: center;
+        font-size: 80px;
+    }
+
+    #inicio h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #inicio{
+        align-items: center;
+        background-image: none;
+    }
+
+    .heading{
+        text-align: center;
+        font-weight: bold;
+        color: #fcb422;
+        font-size: 40px;
+    }
+
+    .card{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #formulario{
+        flex-direction: column;
+    }
+ 
+    #formulario h1{
+        font-size: 55px;
+        padding-top: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    section form{
+        width: 80%;
+    }
+    
+    
+    #formulario form input, #formulario form textarea{
+        background-color: transparent;
+        border: none;
+        border-bottom: 4px solid black;
+        font-size: 24px;
+    }
+    
+    #formulario form input::placeholder, #formulario form textarea::placeholder{
+        color: black;
+    }
+
+}
+
+
+@media screen and (max-width:500px){
+
+
+    #inicio h1{
+        font-size: 64px;
+    }
+
+    .heading{
+        font-size: 32px;
+    }
+
+    #formulario h1{
+        font-size: 45px;
+    }
+
+}
+
+@media screen and (max-width:405px){
+
+
+    #inicio h1{
+        font-size: 55px;
+    }
+
+    .heading{
+        font-size: 32px;
+    }
+
+    #formulario h1{
+        font-size: 38px;
+    }
+
+}
