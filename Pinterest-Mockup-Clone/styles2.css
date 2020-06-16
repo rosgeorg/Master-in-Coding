@@ -21,12 +21,14 @@ html, body{
     border: 0px;
     margin: 10px;
     position: relative;
+
 }
 
 .card img{
     width: -webkit-fill-available;
     border-radius: 28px;
 }
+
 /* 
 @media screen and (max-width:800px){
 
@@ -39,42 +41,62 @@ html, body{
 
 } */
 
-.container-button,
-  .container-button2{
+.container {
+    width: 100%;
+    position: relative;
+  }
+  
+  .button-guardar,
+  .button-compartir,
+  .button-mas,
+  .button-website{
     display: none;
     position: absolute;
   }
   
-  .card-img{
+  .container-img{
     border-radius: 28px;
     width: -webkit-fill-available;
     }
 
-  .container-button {
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+  .button-guardar {
+    top: 3%;
+    right: 7%;
   }
 
-  .container-button2 {
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+  .button-mas {
+    bottom: 3%;
+    right: 7%;
+  }
+
+  .button-compartir {
+    bottom: 3%;
+    right: 25%;
+    background-image: url(./Assets/upload-solid.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 12%;
+  }
+
+  .button-website {
+    bottom: 3%;
+    left: 7%;
   }
   
-  .card:hover .card-img{
-    opacity: 0.7;
+  .card:hover .container-img{
+    opacity: 0.9;
   }
 
 
-  .card:hover .container-button,
-  .card:hover .container-button2 {
+  .card:hover .button-guardar,
+  .card:hover .button-compartir,
+  .card:hover .button-mas,
+  .card:hover .button-website {
     display: block;
   }
 
-
+  
 @media screen and (max-width:750px){
 
     .rows{
