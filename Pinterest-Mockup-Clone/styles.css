@@ -39,40 +39,85 @@ html, body{
 
 } */
 
-.container-button,
-  .container-button2{
-    display: none;
-    position: absolute;
-  }
-  
-  .card-img{
-    border-radius: 28px;
-    width: -webkit-fill-available;
-    }
 
-  .container-button {
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+.button-guardar,
+.button-compartir,
+.button-mas,
+.button-website{
+  display: none;
+  position: absolute;
+}
+
+.card-img{
+  border-radius: 28px;
+  width: -webkit-fill-available;
   }
 
-  .container-button2 {
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-  }
-  
-  .card:hover .card-img{
-    opacity: 0.7;
-  }
+.button-guardar {
+  top: 3%;
+  right: 7%;
+  background-color: #e40028;
+  height: 5%;
+  width: 30%;
+  border-radius: 28px;
+  border: none;
 
+}
 
-  .card:hover .container-button,
-  .card:hover .container-button2 {
-    display: block;
-  }
+.a-guardar{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+.button-mas {
+  bottom: 3%;
+  right: 7%;
+}
+
+.button-compartir {
+  bottom: 3%;
+  right: 25%;
+  background-image: url(./Assets/upload-solid.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 12%;
+}
+
+.button-website {
+  bottom: 3%;
+  left: 7%;
+}
+
+a div{
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 28px;
+  text-decoration: none;
+  color: white;
+  border: none;
+}
+
+.card:hover .card-img{
+  opacity: 0.7;
+}
+
+.card:hover .button-guardar,
+.card:hover .button-compartir,
+.card:hover .button-mas,
+.card:hover .button-website {
+  display: block
+}
+
+.button-guardar:hover > div {
+  background-color:rgba(0, 0, 0, 0.1);
+}
 
 
 @media screen and (max-width:750px){
