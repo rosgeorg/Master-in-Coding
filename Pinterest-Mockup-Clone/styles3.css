@@ -1,27 +1,31 @@
 html, body{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  height: 100%;
+  width: 97%;
+  margin: 0px !important;
+}
+
+html{
+  box-sizing: border-box;
 }
 
 .rows{
-    width: 230px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
+  column-count: 6;
+  column-gap: 1.5em;
+  /* column-gap: 1em; */
+  /* margin: 1.5em auto;
+  max-width: 768px; */
 }
 
 .card{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 0px;
-    margin: 10px;
-    position: relative;
+  position: relative;
+  margin: 0 0 1em;
+  width: 100%;
+}
+
+.card2{
+  
+  margin: 0 0 1em;
+  width: 100%;
 }
 
 .card img{
@@ -115,39 +119,6 @@ a div{
   border: none;
 }
 
-.fixed-button-1{
-  border-radius: 28px;
-  position: fixed;
-  bottom: 60px;
-  right: 60px;
-  border: none;
-  font-weight: regular;
-  text-decoration: none;
-  height: 37px;
-  width: 37px;
-  font-size: 30px;
-  background-color: white;
-}
-
-.fixed-button-2{
-  height: 37px;
-  width: 37px;
-  bottom: 20px;
-  right: 60px;
-  background-color: white;
-  border-radius: 28px;
-  position: fixed;
-  border: none;
-  font-weight: regular;
-  text-decoration: none;
-  font-size: 24px;
-  color: black;
-  /* 
-  display: flex;
-  justify-content: center;
-  align-content: center; */
-}
-
 .card:hover .card-img{
   opacity: 0.8;
 }
@@ -169,15 +140,7 @@ a div{
   opacity: 1;
 }
 
-.fixed-button-1:hover{
-  background-color: lightgray;
-}
-
-.fixed-button-2:hover{
-background-color: lightgrey;
-}
-
-@media screen and (max-width:550px){
+/* @media screen and (max-width:550px){
 
   .rows{
       width: 48%;
@@ -187,19 +150,52 @@ background-color: lightgrey;
       justify-content: space-around;
   }
 
-} 
+}  */
 
-/* @media screen and (max-width:1250px){
 
-    .rows{
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
+@media (min-width:1260px) and (max-width:1440px){
+
+  .card img{
+    width: 243px;
+  }
+
+  .rows{
+      column-count: 5;
+  }
 
 }
 
+@media (min-width:1040px) and (max-width:1260px){
 
-*/
+body{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card img{
+  width: 243px;
+}
+
+.rows{
+    column-count: 4;
+}
+
+}
+
+@media screen and (max-width:1040px){
+
+body{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.card img{
+  width: 243px;
+}
+
+.rows{
+    column-count: 3;
+}
+
+}
+
