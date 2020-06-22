@@ -31,7 +31,7 @@ html{
   
   .button-guardar{
     top: 3%;
-    right: 7%;
+    right: 3%;
     background-color: #e40028;
     height: 36px;
     width: 85px;
@@ -43,7 +43,7 @@ html{
   
   .button-mas {
     bottom: 3%;
-    right: 7%;
+    right: 3%;
     border-radius: 28px;
     border: none;
     font-weight: bold;
@@ -55,7 +55,7 @@ html{
   
   .button-compartir {
     bottom: 3%;
-    right: 25%;
+    right: 20%;
     background-image: url(./Assets/upload-solid.svg);
     background-repeat: no-repeat;
     background-size: 20px;
