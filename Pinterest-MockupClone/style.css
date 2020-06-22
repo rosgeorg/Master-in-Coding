@@ -1,0 +1,571 @@
+html{
+  box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+#navegador{
+    background-color: white;
+    padding-left: 10px;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-size: 15px;
+    z-index: 100;
+}
+
+.btn-nav {
+    background-color: transparent;
+    /* outline: none; */
+    border:none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+#nav-logo{
+    margin: 0px;
+    width: 30px;
+    height: 30px;
+    /* outline: none; */
+    /* border: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inicio{
+    margin-left: 4px;
+}
+
+#nav-logo,#buscador,.nav-but,.nav-menu,#arrow-down,.btn-nav{
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    border-radius: 50px;
+    padding: 12px;
+    outline: none;
+}
+
+.nav-but-first{
+  text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    border-radius: 50px;
+    padding: 8px;
+    outline: none;
+    background-color: black;
+}
+
+#nav-select{
+  text-decoration: none;
+  font-weight: bolder;
+  color: black;
+  border-radius: 50px;
+  padding: 8px;
+  background-color: black;
+  color: white;
+  display:none;
+}
+
+
+header select option{
+  background-color: white;
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+  font-size: 15px;
+  font-weight: bolder;    
+}
+
+#buscador{
+    margin-left: 10px;
+    height: 50px;
+    width: 60%;
+    background-color: #efefef;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#search-logo{
+    width: 22px;
+    padding-right:20px;
+    color: #767676;
+
+}
+#search-input{
+    margin: -10px;
+    padding: 0px;
+    border: none;
+    height:40px;
+    width: 90%;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: #efefef;
+    border-radius: 50px;
+    outline: none;
+}
+.nav-menu{
+    width: 22px;
+    height: 25px;
+    outline: none;
+}
+
+.nav-menu-icon{
+  text-decoration: none;
+  font-weight: regular;
+  border-radius: 50px;
+  padding: 12px;
+  color: #767676;
+  font-size: 25px;
+}
+
+#alert{
+    margin-left: 10px;
+    
+}
+
+#arrow-down{
+    width: 10px;
+    height: 10px;
+    padding: 6px;
+    padding-right: 25px;
+    outline: none;
+} 
+
+/* HOVER pointer*/
+#nav-logo:hover{
+    background-color: #efefef;
+}
+.nav-but:hover{
+    background-color: #efefef;
+}
+
+#buscador:hover > #search-input {
+    background-color: rgb(225,225,225);
+}
+#buscador:hover{
+    background-color: rgb(225,225,225);
+}
+.nav-menu:hover{
+    background-color: #efefef;
+}
+.nav-menu-icon:hover{
+  background-color: #efefef;
+}
+#arrow-down:hover{
+    background-color: #efefef;
+}
+
+/* FOCUS tab*/
+
+#nav-logo:focus{
+    box-shadow: 0 0 0 4px rgb(0, 162, 255,.5);
+}
+.nav-but:focus{
+    box-shadow: 0 0 0 4px rgb(0, 162, 255,.5);
+}
+.nav-but-first:focus{
+  box-shadow: 0 0 0 4px rgb(0, 162, 255,.5);
+}
+#buscador:focus{
+    box-shadow: 0 0 0 4px rgb(0, 162, 255,.5);
+}
+.btn-nav:focus{
+    box-shadow: 0 0 0 4px rgb(0, 162, 255,.5);
+    background-color: #efefef;
+}
+
+/* JORGE SALAS*/
+
+#principal{
+  padding-left: 7px;
+  padding-right: 25px;
+}
+
+.rows{
+    padding-top: 80px;
+    column-count: 6;
+    column-gap: 1.5em;
+    margin-right: 5px;
+  }
+  
+  .card{
+    position: relative;
+    margin: 0 0 1em;
+    width: 100%;
+  }
+  
+  .card img{
+      width: -webkit-fill-available;
+      border-radius: 28px;
+  }
+
+  .button-guardar,
+  .button-compartir,
+  .button-mas,
+  .button-website{
+    display: none;
+    position: absolute;
+  }
+  
+  
+  .button-guardar{
+    top: 3%;
+    right: 3%;
+    background-color: #e40028;
+    height: 36px;
+    width: 85px;
+    border-radius: 28px;
+    border: none;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .button-mas {
+    bottom: 3%;
+    right: 3%;
+    border-radius: 28px;
+    border: none;
+    font-weight: bold;
+    text-decoration: none;
+    opacity: 0.7;
+    height: 34px;
+    width: 34px;
+  }
+  
+  .button-compartir {
+    bottom: 3%;
+    right: 20%;
+    background-image: url(./Assets/upload-solid.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    height: 34px;
+    width: 34px;
+    border-radius: 28px;
+    border: none;
+    font-weight: bold;
+    text-decoration: none;
+    opacity: 0.7;
+  }
+  
+  .button-website {
+    bottom: 3%;
+    left: 7%;
+    border-radius: 28px;
+    border: none;
+    font-weight: bold;
+    text-decoration: none;
+    opacity: 0.7;
+    height: 34px;
+  }
+  
+  a div{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 28px;
+    text-decoration: none;
+    color: white;
+    border: none;
+  }
+
+  .fixed-button-1{
+    border-radius: 28px;
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    border: none;
+    font-weight: regular;
+    text-decoration: none;
+    height: 37px;
+    width: 37px;
+    font-size: 30px;
+    background-color: white;
+  }
+
+  .fixed-button-2{
+    height: 37px;
+    width: 37px;
+    bottom: 20px;
+    right: 60px;
+    background-color: white;
+    border-radius: 28px;
+    position: fixed;
+    border: none;
+    font-weight: regular;
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+  }
+  
+  .card:hover .card-img{
+    opacity: 0.8;
+  }
+  
+  .card:hover .button-guardar,
+  .card:hover .button-compartir,
+  .card:hover .button-mas,
+  .card:hover .button-website {
+    display: block
+  }
+  
+  .button-guardar:hover > div {
+    background-color:rgba(0, 0, 0, 0.1);
+  }
+  
+  .button-website:hover,
+  .button-compartir:hover,
+  .button-mas:hover{
+    opacity: 1;
+  }
+
+  .fixed-button-1:hover{
+      background-color: lightgray;
+  }
+
+  .fixed-button-2:hover{
+    background-color: lightgrey;
+  }
+
+  /*....................................*/
+  .dropbtn {
+    background-color: #000000;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    border-radius: 30px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F1F1F1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9999;
+    border-radius: 30px;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  #a1 {
+    border-radius: 30px 30px 0px 0px;
+  }
+  #a2 {
+    border-radius: 0px 0px 0px 0px;
+  }
+  #a3 {
+    border-radius: 0px 0px 30px 30px;
+  }
+  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropbtn {background-color: #000000;}
+/*........................*/
+
+  @media (min-width:1260px) and (max-width:1440px){
+  
+    .card img{
+      width: 243px;
+    }
+  
+    .rows{
+        column-count: 5;
+    }
+  
+  }
+  
+  @media (min-width:1040px) and (max-width:1260px){
+  
+  #principal{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .card img{
+    width: 243px;
+  }
+  
+  .rows{
+      column-count: 4;
+  }
+  
+  }
+  
+  @media screen and (max-width:1040px){
+  
+  #principal{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  .card img{
+    width: 243px;
+  }
+  
+  .rows{
+      column-count: 3;
+  }
+  
+  }
+
+  @media screen and (max-width:890px){
+  
+    #principal{
+      padding-left: 150px;
+      padding-right: 150px;
+    }
+    
+    .card img{
+      width: 243px;
+    }
+    
+    .rows{
+        column-count: 2;
+    }
+    
+    }
+  
+    @media screen and (max-width:850px){
+  
+        #principal{
+            padding-left: 140px;
+            padding-right: 140px;
+          }
+        
+    }
+
+    @media screen and (max-width:830px){
+  
+        #principal{
+            padding-left: 130px;
+            padding-right: 130px;
+          }
+        
+    }
+
+    @media screen and (max-width:815px){
+  
+        #principal{
+            padding-left: 110px;
+            padding-right: 110px;
+          }
+        
+    }
+
+    @media screen and (max-width:800px){
+  
+        #principal{
+            padding-left: 100px;
+            padding-right: 100px;
+          }
+        
+    }
+
+    @media screen and (max-width:760px){
+  
+        #principal{
+            padding-left: 90px;
+            padding-right: 90px;
+          }
+        
+    }
+
+    @media screen and (max-width:720px){
+  
+        #principal{
+            padding-left: 70px;
+            padding-right: 70px;
+          }
+        
+    }
+
+    @media screen and (max-width:680px){
+  
+        #principal{
+            padding-left: 50px;
+            padding-right: 50px;
+          }
+        
+    }
+
+    @media screen and (max-width:650px){
+  
+        #principal{
+            padding-left: 30px;
+            padding-right: 30px;
+          }
+        
+    }
+
+    @media screen and (max-width:600px){
+  
+        #principal{
+            padding-left: 10px;
+            padding-right: 00px;
+          }
+        
+          .card{
+            display: flex;
+            justify-content: center;
+        }
+        
+    }
+
+
+    /*EMGC*/
+
+    @media screen and (max-width:560px){
+
+
+      .nav-but{
+        display: none;
+      }
+
+      .nav-but-first{
+        display: none;
+      }
+
+      #nav-select{
+        display:block;
+      }
+
+      #principal{
+        padding-right: 5px;
+      }
+  
+    }
+    
+
+
+

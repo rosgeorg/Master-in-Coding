@@ -1,0 +1,150 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+#navegador{
+    margin-left: 10px;
+    width: 98%;
+    height: 50px;
+    position: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-size: 15px;
+
+}
+
+button {
+    background-color: transparent;
+    /* outline: none; */
+    border:none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+#nav-logo{
+    margin: 0px;
+    width: 20px;
+    height: 20px;
+    /* outline: none; */
+    /* border: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inicio{
+    margin-left: 4px;
+}
+
+#nav-logo,#buscador,.nav-but,.nav-menu,#arrow-down,button{
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    border-radius: 50px;
+    padding: 8px;
+    outline: none;
+}
+
+#buscador{
+    margin-left: 10px;
+    height: 50px;
+    width: 60%;
+    background-color: #efefef;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#search-logo{
+    width: 22px;
+    padding-right:20px;
+    color: #767676;
+
+}
+#search-input{
+    margin: -10px;
+    padding: 0px;
+    border: none;
+    height:40px;
+    width: 90%;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: #efefef;
+    border-radius: 50px;
+    outline: none;
+}
+.nav-menu{
+    width: 22px;
+    height: 25px;
+    outline: none;
+}
+
+#alert{
+    margin-left: 10px;
+}
+
+#arrow-down{
+    width: 10px;
+    height: 10px;
+    padding: 6px;
+    outline: none;
+} 
+
+/* HOVER pointer*/
+#nav-logo:hover{
+    background-color: #efefef;
+}
+.nav-but:hover{
+    background-color: #efefef;
+}
+#buscador:hover > #search-input {
+    background-color: rgb(225,225,225);
+}
+#buscador:hover{
+    background-color: rgb(225,225,225);
+}
+.nav-menu:hover{
+    background-color: #efefef;
+}
+#arrow-down:hover{
+    background-color: #efefef;
+}
+
+/* FOCUS tab*/
+
+#nav-logo:focus{
+    box-shadow: 0 0 0 4px rgb(0, 162, 255,.5);
+}
+.nav-but:focus{
+    box-shadow: 0 0 0 4px rgb(0, 162, 255,.5);
+}
+#buscador:focus{
+    box-shadow: 0 0 0 4px rgb(0, 162, 255,.5);
+}
+button:focus{
+    box-shadow: 0 0 0 4px rgb(0, 162, 255,.5);
+    background-color: #efefef;
+}
+
+
+/* ACTIVE click*/
+
+/* #buscador:active{
+    box-shadow: 0 0 0 4px rgb(0, 162, 255);
+} */
+
+

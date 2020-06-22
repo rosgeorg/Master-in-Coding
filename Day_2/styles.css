@@ -1,0 +1,24 @@
+header{
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+}
+
+body{
+    background-color: bisque;
+}
+
+.links{ /*Selector por clase*/
+    font-size: 17px; /*Tamaño de la fuente*/
+    color: bisque; /*Color del texto*/
+    text-decoration: none; /*Quita decoración del texto, ej. el subrayado*/
+
+}
+
+#logo{ /*selector por id*/
+    font-size: 30px;
+    color: bisque;
+    text-decoration: none;
+    font-weight: bold; /*grosor de la fuente*/
+}
+
