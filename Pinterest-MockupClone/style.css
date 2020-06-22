@@ -39,6 +39,19 @@ html,body{
     outline: none;
 }
 
+.btn-nav-arrow {
+  background-color: transparent;
+  /* outline: none; */
+  border:none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  padding-right: 25px;
+}
+
 #nav-logo{
     margin: 0px;
     width: 30px;
@@ -146,7 +159,6 @@ header select option{
     width: 10px;
     height: 10px;
     padding: 6px;
-    padding-right: 25px;
     outline: none;
 } 
 
@@ -192,12 +204,16 @@ header select option{
     box-shadow: 0 0 0 4px rgb(0, 162, 255,.5);
     background-color: #efefef;
 }
+.btn-nav-arrow:focus{
+  box-shadow: 0 0 0 4px rgb(0, 162, 255,.5);
+  background-color: #efefef;
+}
 
 /* JORGE SALAS*/
 
 #principal{
   padding-left: 7px;
-  padding-right: 25px;
+  padding-right: 7px;
 }
 
 .rows{
@@ -296,7 +312,7 @@ header select option{
     border-radius: 28px;
     position: fixed;
     bottom: 60px;
-    right: 60px;
+    right: 20px;
     border: none;
     font-weight: regular;
     text-decoration: none;
@@ -310,7 +326,7 @@ header select option{
     height: 37px;
     width: 37px;
     bottom: 20px;
-    right: 60px;
+    right: 20px;
     background-color: white;
     border-radius: 28px;
     position: fixed;
@@ -358,7 +374,9 @@ header select option{
     font-size: 16px;
     border: none;
     border-radius: 30px;
+    white-space: nowrap;
   }
+
   .dropdown {
     position: relative;
     display: inline-block;
