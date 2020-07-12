@@ -54,7 +54,8 @@
             //Creación de Párrafo para tipo
             var tipo = document.createElement('p');
             tipo.setAttribute('class', "card-text");
-            tipo.innerHTML = "Type: " + displayedPokemons[i].type;
+            tipo.setAttribute('class', "type-font");
+            tipo.innerHTML = "Type: <br/>" + displayedPokemons[i].type;
             cuerpo.appendChild(tipo);
             //Creación de Párrafo para HP
             var tipo = document.createElement('p');

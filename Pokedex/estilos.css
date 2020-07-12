@@ -26,6 +26,10 @@ body{
     border: none;
 }
 
+.type-font{
+    font-size: 14px;
+}
+
 /* PIXEL BORDER */
 .pxl-border {
     background: white;
