@@ -76,3 +76,10 @@ setInterval(function(){ //va a ejecutar esto cada tres segundos
     }
 }, 3000) //3000 milisegundos
 
+
+
+
+
+
+
+
