@@ -51,3 +51,5 @@ getPeopleById(20).then((people) =>
     .then((movie) => console.log(movie.title))
     .catch((err) => console.log(err))
 );
+
+

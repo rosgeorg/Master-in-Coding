@@ -1,4 +1,4 @@
-/* 4.- Hacer una petición a la swapi a un personaje y obtener 
+/* 5.- Hacer una petición a la swapi a un personaje y obtener 
    el titulo de la primera pelicula. https://swapi.co/ */
 
 const request = require("request");

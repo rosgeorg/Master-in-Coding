@@ -1,0 +1,14 @@
+$primary-color: #FF5733;
+$font_size: 18px;
+
+body{
+    font-size: $font_size;
+
+    h1{
+        color: $primary-color;
+    }
+
+    .my-div{
+        background-color: $primary-color;
+    }
+}
