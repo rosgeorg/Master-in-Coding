@@ -47,11 +47,12 @@ class Quiz {
       //Creación del form
       var col = document.createElement("form");
       col.setAttribute("class", "col-12");
+      col.setAttribute("class", "mt-3");
       row.appendChild(col);
       var question = document.createElement("p");
       col.setAttribute("id", indexId);
+      question.innerHTML = indexId + ") " + e.question;
       indexId += 1;
-      question.innerHTML = e.question;
       col.appendChild(question);
       //Creación de botones radio
       for (let i = 0; i < this.options.length; i++) {
@@ -74,10 +75,12 @@ class Quiz {
     });
     var col2 = document.createElement("div");
     col2.setAttribute("class", "col-12");
+    col2.setAttribute("class", "col-12 d-flex justify-content-center");
     row.appendChild(col2);
     var submitButton = document.createElement("button");
     submitButton.setAttribute("id", "submit");
-    submitButton.innerHTML = "Submit";
+    submitButton.setAttribute("class", "btn btn-dark btn-style");
+    submitButton.innerHTML = "SUBMIT";
     col2.appendChild(submitButton);
     //Fin de creación de form
     //Botón de submit
